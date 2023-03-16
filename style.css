@@ -1,0 +1,83 @@
+html { height: 100%; }
+
+body {
+    margin: 0;
+    background: linear-gradient(rgb(174, 116, 245), rgb(111, 77, 234));
+}
+
+#root {
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    margin: 90px 250px;
+    height: 500px;
+}
+
+#faq {
+    padding-right: 30px;
+    overflow-y: auto;
+    margin-top: 30px;
+    margin-left: 480px;
+}
+
+.content {
+    margin-left: 3px;
+    margin-top: 20px;
+    width: 450px;
+}
+
+.box {
+    border-bottom: 1px solid rgb(210, 205, 205);
+}
+
+.arrow {
+    margin-right: 3px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.answer {
+    color: gray;
+    font-size: 14px;
+    margin-top: 0;
+    display: none;
+}
+
+.question > span {
+    color: rgb(96, 94, 94);
+}
+
+.question > span:hover { color: rgb(239, 158, 45); }
+
+#images {
+    position: relative;
+}
+
+.img-bg {
+    position: absolute;
+    width: 950px;
+    margin-left: -580px;
+    margin-top: -300px;
+}
+
+.img-woman {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -90px;
+    width: 400px;
+}
+
+.img-box {
+    position: absolute;
+    width: 185px;
+    height: 185px;
+    margin-top: 198px;
+    margin-left: -127px;
+}
