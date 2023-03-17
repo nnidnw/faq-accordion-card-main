@@ -29,20 +29,20 @@ const [
 const arrow = document.getElementsByClassName('arrow');
 
 question1.addEventListener('click', () => {
-    if(answer1 && answer1.style.display === 'none') {
+    if(answer1 && answer1.style.display === 'none' || answer1.style.display === '') {
+        answer1.style.display = 'block';
         question1.style.color = 'black';
         question1.style.fontWeight = 'bold';
-        answer1.style.display = 'block';
         arrow[0].style.transform = 'rotate(180deg)';
     } else {
+        answer1.style.display = 'none';
         question1.style.color = 'rgb(96, 94, 94)';
         question1.style.fontWeight = 'normal';
-        answer1.style.display = 'none';
         arrow[0].style.transform = 'rotate(0deg)';
     }
 });
 question2.addEventListener('click', () => {
-    if(answer2 && answer2.style.display === 'none') {
+    if(answer2 && answer2.style.display === 'none' || answer2.style.display === '') {
         question2.style.color = 'black';
         question2.style.fontWeight = 'bold';
         answer2.style.display = 'block';
@@ -55,7 +55,7 @@ question2.addEventListener('click', () => {
     }
 });
 question3.addEventListener('click', () => {
-    if(answer3 && answer3.style.display === 'none') {
+    if(answer3 && answer3.style.display === 'none' || answer3.style.display === '') {
         question3.style.color = 'black';
         question3.style.fontWeight = 'bold';
         answer3.style.display = 'block';
@@ -68,7 +68,7 @@ question3.addEventListener('click', () => {
     }
 });
 question4.addEventListener('click', () => {
-    if(answer4 && answer4.style.display === 'none') {
+    if(answer4 && answer4.style.display === 'none' || answer4.style.display === '') {
         question4.style.color = 'black';
         question4.style.fontWeight = 'bold';
         answer4.style.display = 'block';
@@ -81,7 +81,7 @@ question4.addEventListener('click', () => {
     }
 });
 question5.addEventListener('click', () => {
-    if(answer5 && answer5.style.display === 'none') {
+    if(answer5 && answer5.style.display === 'none' || answer5.style.display === '') {
         question5.style.color = 'black';
         question5.style.fontWeight = 'bold';
         answer5.style.display = 'block';
